@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <meta name="descritpion" content="Sign-Up Registration Form" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="text/javascript" href="scripts/validate.js"/>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Registration Form</h1>
+        <hr />
+    </header>
+    <main id="main">
+        <form name="myForm" onsubmit="goUrl()" >
+            <div class="formContent">
+                <div class="emailContainer">
+                    <label for="inputEmailId">Email</label>
+                    <input type="text" id="inputEmailId" name="email" placeholder="email"/>
+                    <div id="emailError" class="inputError"></div>
+                    
+                </div>
+
+                <div class="passwordContainer">
+                    
+                        <label for="inputPasswordId">Password</label>
+                        <input type="password" id="inputPasswordId" placeholder="Password" />
+                        <p id="passwordError" class="inputError"></p>
+
+
+                        <label for="inputConfirmId">Confirm Password</label>
+                        <input type="password" id="inputConfirmId" placeholder="Confirm Password" />
+                        <div id="confirmError" class="inputError"></div>
+                    
+                </div>
+            </div>
+            <div class="buttonsContainer">
+                <p id="formError" class="inputError"></p>
+                <input type="button" onclick="validate(myForm)" value="Register">
+                <input type="reset" value="Reset">
+
+                
+            </div>
+        </form>
+    </main>
+    <footer id="footer"></footer>
+    <script type="text/javascript" src="scripts/validate.js"></script>
+</body>
+
+</html>
